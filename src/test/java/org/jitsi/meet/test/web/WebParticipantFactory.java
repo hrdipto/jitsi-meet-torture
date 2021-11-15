@@ -224,7 +224,7 @@ public class WebParticipantFactory
             ops.addArguments("use-fake-ui-for-media-stream");
             ops.addArguments("use-fake-device-for-media-stream");
             ops.addArguments("disable-plugins");
-            ops.addArguments("mute-audio");
+            // ops.addArguments("mute-audio");
             ops.addArguments("disable-infobars");
             // Since chrome v66 there are new autoplay policies, which broke
             // shared video tests, disable no-user-gesture to make it work

@@ -136,7 +136,8 @@ case $1 in
     MALLEUS_DURATION=$4
     MALLEUS_ROOM_NAME_PREFIX=$5
     MALLEUS_HUB_URL=$6
-    MALLEUS_INSTANCE_URL='https://meet.jit.si'
+    MALLEUS_INSTANCE_URL='https://localhost:8443'
+    MALLEUS_TESTS_TO_RUN=MalleusJitsificus
 
     set_defaults
     ;;
@@ -182,7 +183,7 @@ mvn \
 -DallowInsecureCerts=$MALLEUS_ALLOW_INSECURE_CERTS \
 -Djitsi-meet.tests.toRun=$MALLEUS_TESTS_TO_RUN \
 -Dwdm.gitHubTokenName=jitsi-jenkins \
--Dremote.resource.path=/usr/share/jitsi-meet-torture \
+-Dremote.resource.path=/usr/share/jitsi-meet-torture/ \
 -Djitsi-meet.instance.url=$MALLEUS_INSTANCE_URL \
 -Djitsi-meet.isRemote=true \
 -Dchrome.disable.nosanbox=true \

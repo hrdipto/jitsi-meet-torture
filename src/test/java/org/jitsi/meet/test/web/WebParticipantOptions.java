@@ -157,7 +157,7 @@ public class WebParticipantOptions
         Properties defaults = super.initDefaults();
 
         defaults.setProperty(
-                PROP_FAKE_AUDIO, "resources/fakeAudioStream.wav");
+                PROP_FAKE_AUDIO, "/usr/share/jitsi-meet-torture/resources/fakeAudioStream.wav");
         defaults.setProperty(
                 PROP_REMOTE_ADDRESS_NAME, DEFAULT_REMOTE_ADDRESS_NAME);
         defaults.setProperty(

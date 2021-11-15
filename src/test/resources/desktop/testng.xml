@@ -254,7 +254,7 @@
             <class name="org.jitsi.meet.test.MaxUsersTest" />
         </classes>
     </test>
-    <test name="MultipleConferencesTest">
+    <test name="MalleusJitsificus">
         <classes>
             <class name="org.jitsi.meet.test.MalleusJitsificus" />
         </classes>
